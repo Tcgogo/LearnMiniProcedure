@@ -1,2 +1,8 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view>我的名字： {{ myName }}</view>
+<view>我的年龄： {{ myAge }}</view>
+
+<view wx:for="{{list}}"> {{item}} </view>
+
+<view>当前计数： {{ count }}</view>
+<button size="mini" bindtap="handleBtnAdd">+</button>
