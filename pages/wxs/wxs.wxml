@@ -1,0 +1,5 @@
+<!--pages/wxs/wxs.wxml-->
+<wxs src="../../wxs/info.wxs" module="info"></wxs>
+
+<view>{{ info.name }}</view>
+<view>{{ info.sum(10, 29) }}</view>

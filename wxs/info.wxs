@@ -1,0 +1,12 @@
+var message = "tcgogo";
+var name = "tc";
+var sum = function(a, b) {
+  return a + b;
+}
+
+//commonjs的模块化导出方法
+module.exports = {
+  message: message,
+  name: name,
+  sum: sum
+}
