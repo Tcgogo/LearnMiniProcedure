@@ -1,8 +1,19 @@
 <!--pages/home/home.wxml-->
-<view>我的名字： {{ myName }}</view>
-<view>我的年龄： {{ myAge }}</view>
+<text>文本组件。</text>
+<text decode>文本组件。&gt;</text>
+<text space="emsp">文本 组件。</text>
+<text selectable>文本组件2。</text>
 
-<view wx:for="{{list}}"> {{item}} </view>
+<button type="primary" size="mini">按钮组件</button>
+<button type="default" size="mini">按钮组件</button>
+<button type="warn" size="mini">按钮组件</button>
 
-<view>当前计数： {{ count }}</view>
-<button size="mini" bindtap="handleBtnAdd">+</button>
+<input placeholder="输入同步到view中" type="password"/>
+
+<image show-menu-by-longpress src="{{imgUrl}}"></image>
+<button bindtap="chooseImg">选择图片</button>
+
+//局部滚动
+<scroll-view class="content" scroll-y>
+  <view wx:key="item" wx:for="{{10}}">abc{{item}}</view>
+</scroll-view>

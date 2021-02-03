@@ -1,1 +1,5 @@
 /* pages/home/home.wxss */
+.content {
+  height: 50px;
+  background: rgb(201, 161, 161);
+}
