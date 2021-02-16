@@ -25,6 +25,12 @@ Page({
         })
       }
     })
+  },
+  handleIncrement(event) {
+    console.log(event);
+    this.setData({
+      count: this.data.count +1
+    });
   }
 
 })

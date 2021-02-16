@@ -17,3 +17,5 @@
 <scroll-view class="content" scroll-y>
   <view wx:key="item" wx:for="{{10}}">abc{{item}}</view>
 </scroll-view>
+<view>{{ count }}</view>
+<my-cpn title="你好啊" titleclass="red" bind:increment="handleIncrement"></my-cpn>
