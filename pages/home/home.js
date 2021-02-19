@@ -1,4 +1,5 @@
 // pages/home/home.js
+import request from "../../service/network"
 Page({
 
   /**
@@ -10,6 +11,16 @@ Page({
     list: ['a','b','c'],
     count: 0,
     imgUrl: ""
+  },
+  onLoad: function(option) {
+    request({
+      url: "http://152.136.185.210:8000/api/w6/recommend",
+      methods: "get"
+    }).then((res)=> {
+      console.log(res)
+    }, (err) => {
+      console.log(err)
+    })
   },
   handleBtnAdd() {
     this.setData({
